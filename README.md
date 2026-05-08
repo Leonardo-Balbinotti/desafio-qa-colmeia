@@ -89,35 +89,23 @@ report.html
 
 ## 🚀 Como Executar o Projeto
 
-1.  **Instalação:**
-    ```bash
-    npm install
-    ```
-2.  **Executar via Interface (Cypress Open):**
-    ```bash
-    npx cypress open
-    ```
-3. **Executar e Gerar Relatórios (Modo Headless):**
-    ```bash
-   npm test
-    ```
-4. **Gerar o relatório HTML com Mochawesome após a execução dos testes:**
-    ```bash
-   npm run report
-    ```
+1. **Instalação:**
+   ```bash
+   npm install
 
-5. **Abrir o relatório gerado no navegador:**
- ```bash
-start report.html
-    ```
+2. Executar via Interface (Cypress Open):
+    npx cypress open
+
+3. Executar os testes em modo headless:
+    npm test
+
+4. Gerar o relatório HTML com Mochawesome após a execução dos testes:
+    npm run report
+
+5. Abrir o relatório gerado no navegador:
+    start report.html
 
 
 ---
 
-<p align="center">
-  Desenvolvido por <strong>Leonardo Balbinotti</strong> 🚀
-  <br>
-  <a href="https://www.linkedin.com/in/leonardo-balbinotti" target="_blank">
-    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-</p>
+<p align="center"> Desenvolvido por <strong>Leonardo Balbinotti</strong> 🚀 <br> <a href="https://www.linkedin.com/in/leonardo-balbinotti" target="_blank"> <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> </p> ```

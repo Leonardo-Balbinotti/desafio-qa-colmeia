@@ -57,13 +57,17 @@ A suíte cobre **10 cenários críticos**, garantindo uma cobertura abrangente d
 ## 🐞 Relatório de Bugs Identificados
 Durante a execução da automação, foram detectadas as seguintes inconsistências:
 
+## 🐞 Relatório de Bugs Identificados
+
+Durante a execução da automação, foram detectadas as seguintes inconsistências:
+
 | ID | Defeito | Impacto |
-| :--- | :--- | :--- | :--- |
-| **BUG-01** | **Bypass de Validação**  | Permite salvar campos vazios através de clique duplo no botão "Salvar". |
-| **BUG-02** | **Item não sendo apresentado** | Registros arquivados não são exibidos na aba "Arquivados", |
-| **BUG-03** | **Falta de Persistência**  | Clicar no botão de atualizar da tabela não traz os itens que "sumiram" no arquivamento e dados criados em memória são perdidos ao atualizar o navegador (F5). |
-| **BUG-04** | **Duplicidade de Nomes**  | O sistema permite a criação de múltiplos bancos com o mesmo nome sem aviso. |
-| **BUG-05** | **Permite nomes vazios**  | É possível criar um banco de dados sem nome nenhum (apenas espaços ou em branco), o que quebra a integridade da listagem. |
+| :--- | :--- | :--- |
+| **BUG-01** | **Bypass de Validação** | Permite salvar campos vazios através de clique duplo no botão "Salvar". |
+| **BUG-02** | **Item não sendo apresentado** | Registros arquivados não são exibidos corretamente na aba "Arquivados". |
+| **BUG-03** | **Falta de Persistência** | Dados criados em memória são perdidos ao atualizar o navegador (F5) e o refresh da tabela não recupera registros arquivados. |
+| **BUG-04** | **Duplicidade de Nomes** | O sistema permite a criação de múltiplos bancos com o mesmo nome sem aviso. |
+| **BUG-05** | **Permite nomes vazios** | É possível criar bancos sem nome válido (campos vazios ou apenas espaços). |
 
 
 ## 💡 Sugestões de Melhoria (UX)
@@ -72,9 +76,15 @@ Durante a execução da automação, foram detectadas as seguintes inconsistênc
 * Aplicar máscaras de validação e restrição de caracteres no campo de nome.
 
 ## 📊 Relatórios de Execução
-O projeto utiliza o Mochawesome para geração de relatórios HTML de execução automatizada.
+## 📊 Relatórios de Execução
+
+O projeto utiliza o **Mochawesome** para geração de relatórios HTML de execução automatizada.
+
 Os relatórios são gerados automaticamente na raiz do projeto através do arquivo:
+
+```txt
 report.html
+
 ---
 
 ## 🚀 Como Executar o Projeto
@@ -100,6 +110,8 @@ report.html
  ```bash
 start report.html
     ```
+
+
 ---
 
 <p align="center">

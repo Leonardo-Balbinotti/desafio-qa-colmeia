@@ -1,0 +1,22 @@
+{
+  "name": "desafio-qa-colmeia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "clean": "rmdir /s /q cypress\\reports",
+  "test": "npm run clean && npx cypress run",
+  "report": "npx mochawesome-merge cypress/reports/*.json > report.json && npx marge report.json --reportFilename report --reportDir . --inline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^15.14.2",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}

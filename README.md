@@ -76,13 +76,11 @@ Durante a execução da automação, foram detectadas as seguintes inconsistênc
 * Aplicar máscaras de validação e restrição de caracteres no campo de nome.
 
 ## 📊 Relatórios de Execução
-## 📊 Relatórios de Execução
 
 O projeto utiliza o **Mochawesome** para geração de relatórios HTML de execução automatizada.
 
 Os relatórios são gerados automaticamente na raiz do projeto através do arquivo:
 
-```txt
 report.html
 
 ---
@@ -90,7 +88,6 @@ report.html
 ## 🚀 Como Executar o Projeto
 
 1. **Instalação:**
-   ```bash
    npm install
 
 2. Executar via Interface (Cypress Open):
@@ -108,4 +105,10 @@ report.html
 
 ---
 
-<p align="center"> Desenvolvido por <strong>Leonardo Balbinotti</strong> 🚀 <br> <a href="https://www.linkedin.com/in/leonardo-balbinotti" target="_blank"> <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </a> </p> ```
+<p align="center">
+  Desenvolvido por <strong>Leonardo Balbinotti</strong> 🚀
+  <br>
+  <a href="https://www.linkedin.com/in/leonardo-balbinotti" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>

@@ -55,9 +55,6 @@ A suíte cobre **10 cenários críticos**, garantindo uma cobertura abrangente d
 ---
 
 ## 🐞 Relatório de Bugs Identificados
-Durante a execução da automação, foram detectadas as seguintes inconsistências:
-
-## 🐞 Relatório de Bugs Identificados
 
 Durante a execução da automação, foram detectadas as seguintes inconsistências:
 

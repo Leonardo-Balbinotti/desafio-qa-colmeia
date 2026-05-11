@@ -24,6 +24,8 @@ Exemplo:
 
 As URLs e configurações sensíveis são gerenciadas via variáveis de ambiente do Cypress.
 
+> **⚠️ Nota para o Avaliador:** Excepcionalmente para este desafio, o arquivo `.env` foi mantido no repositório (fora do `.gitignore`). Essa decisão foi intencional para facilitar a clonagem e execução imediata dos testes, eliminando a necessidade de configurações prévias.
+
 ## 📌 Estratégia de Testes
 
 A estratégia adotada priorizou:

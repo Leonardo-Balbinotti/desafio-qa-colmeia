@@ -40,19 +40,37 @@ A estratégia adotada priorizou:
 A suíte cobre **10 cenários críticos**, garantindo uma cobertura abrangente da tela:
 
 **Cenários para criação de bancos**
-1.  **Criação (Caminho Feliz):** Validação do fluxo completo de criação de um novo banco.
-2.  **Negativo (Validação):** Tentativa de salvar sem preencher campos obrigatórios.
-3.  **Clique Duplo (Bug):** Evidência de bypass na validação ao salvar via duplo clique.
-4.  **Arquivamento (Bug):** Fluxo de arquivar registro e validação de persistência na aba.
-5.  **Pesquisa/Filtro:** Validação da busca dinâmica por nome de registro.
-6.  **Exclusão:** Remoção de registro da listagem principal.
-7.  **Segurança (Sanitização):** Inserção de caracteres especiais e scripts no nome do banco.
-9.  **Persistência de Dados (Bug):** Validação da perda de registros após refresh da aplicação.
+1. **Criação de Banco (Caminho Feliz):**  
+   Validação do fluxo completo de criação de um novo banco de dados.
+
+2. **Validação de Campo Obrigatório e Bypass de Validação:**  
+   Tentativa de salvar registro sem preenchimento e evidência de falha via clique duplo no botão "Salvar".
+
+3. **Arquivamento de Registro:**  
+   Validação do fluxo de arquivamento e inconsistência de persistência/listagem após atualização.
+
+4. **Pesquisa e Filtro Dinâmico:**  
+   Validação de busca por registros existentes e comportamento para pesquisas sem resultado.
+
+5. **Exclusão de Registro:**  
+   Remoção de banco de dados e validação da exclusão na listagem.
+
+6. **Duplicidade de Nomes:**  
+   Validação do comportamento da aplicação ao permitir criação de registros com nomes idênticos.
+
+7. **Sanitização e Caracteres Especiais:**  
+   Inserção de caracteres especiais e scripts para validação básica de segurança e renderização.
+
+8. **Persistência após Refresh:**  
+   Validação da perda de dados após atualização completa da aplicação (F5/reload).
 
 
 **Cenários referente ao login**
-1.  **Login invalido:** Preencher dados inválidos para validar dados incorretos
-2.  **Login vazio:** Tentar acessar o sistema sem nenhuma credencial informada
+9. **Login sem preenchimento:**  
+   Validação de mensagens obrigatórias ao tentar autenticação sem credenciais.
+
+10. **Login com credenciais inválidas:**  
+    Validação do comportamento da aplicação ao informar usuário/senha incorretos.
 
 ---
 
@@ -67,7 +85,8 @@ Durante a execução da automação, foram detectadas as seguintes inconsistênc
 | **BUG-03** | **Falta de Persistência** | Dados criados em memória são perdidos ao atualizar o navegador (F5) e o refresh da tabela não recupera registros arquivados. |
 | **BUG-04** | **Duplicidade de Nomes** | O sistema permite a criação de múltiplos bancos com o mesmo nome sem aviso. |
 | **BUG-05** | **Permite nomes vazios** | É possível criar bancos sem nome válido (campos vazios ou apenas espaços). |
-
+| **BUG-06** | **Colmeia Forms sem carregamento** | Ao acessar a funcionalidade "Colmeia Forms", nenhum conteúdo é renderizado na tela, impossibilitando utilização do módulo. |
+| **BUG-07** | **Menu do candidato sem ação** | O botão/perfil do candidato apresenta ícone de expansão, porém não executa nenhuma ação ou exibe opções ao usuário após clique. |
 
 ## 💡 Sugestões de Melhoria (UX)
 * Implementar **Modais de Confirmação** antes de ações de exclusão por exemplo.

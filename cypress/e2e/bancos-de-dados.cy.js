@@ -44,6 +44,8 @@ describe('Funcionalidade: Bancos de Dados - Colmeia', () => {
     cy.contains('Campo obrigatório').should('not.exist');
   });
 
+  // --- CENÁRIO 3: Validação de banco cadastrado na listagem ---
+
   it('Deve arquivar um banco e validar que o registro não consta nos arquivados', () => {
 
     const nomeBancoArquivar = `Banco_Para_Arquivar_${Math.floor(Math.random() * 1000)}`;
@@ -225,4 +227,5 @@ describe('Funcionalidade: Bancos de Dados - Colmeia', () => {
     cy.contains('tr', bancoRefresh).should('not.exist');
 
   });
+  
 });

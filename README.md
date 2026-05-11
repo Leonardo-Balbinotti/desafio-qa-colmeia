@@ -40,6 +40,7 @@ A estratégia adotada priorizou:
 A suíte cobre **10 cenários críticos**, garantindo uma cobertura abrangente da tela:
 
 **Cenários para criação de bancos**
+
 1. **Criação de Banco (Caminho Feliz):**  
    Validação do fluxo completo de criação de um novo banco de dados.
 
@@ -66,6 +67,7 @@ A suíte cobre **10 cenários críticos**, garantindo uma cobertura abrangente d
 
 
 **Cenários referente ao login**
+
 9. **Login sem preenchimento:**  
    Validação de mensagens obrigatórias ao tentar autenticação sem credenciais.
 
